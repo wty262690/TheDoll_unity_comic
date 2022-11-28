@@ -7,6 +7,7 @@ using TMPro;
 public class text : MonoBehaviour
 {
     public float charsPerSecond = 0.2f;
+    public bool dialog = true;
     private string words;
 
     public bool isActive = false;
@@ -22,6 +23,7 @@ public class text : MonoBehaviour
         myText = GetComponent<TextMeshProUGUI>();
         words = myText.text;
         myText.text= "";
+        dialogchange();
     }
 
     // Update is called once per frame
@@ -54,5 +56,16 @@ public class text : MonoBehaviour
         timer=0;
         currentPos = 0;
         myText.text = words;
+    }
+
+    void dialogchange(){
+        string textContent=words;
+        if (dialog){
+            for (int i=1; i<=words.Length; i++){
+                textContent = textContent.Insert(2*i-1, "\n");
+            }
+            print(textContent);
+            words = textContent;
+        }
     }
 }

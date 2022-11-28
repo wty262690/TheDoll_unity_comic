@@ -669,6 +669,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:\桌面\功課\大三上\虛擬實境\program\class\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.OpenVR">
+        <HintPath>D:\桌面\功課\大三上\虛擬實境\program\class\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:\桌面\功課\大三上\虛擬實境\program\class\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -746,6 +749,9 @@
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
         <HintPath>D:\桌面\功課\大三上\虛擬實境\program\class\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenVR.Editor">
+        <HintPath>D:\桌面\功課\大三上\虛擬實境\program\class\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
         <HintPath>D:\桌面\功課\大三上\虛擬實境\program\class\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>

@@ -23,6 +23,7 @@ public class animationcontorl : MonoBehaviour
     private music musicplay;
     public List<GameObject> goList;
     public int finish=0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -100,13 +101,21 @@ public class animationcontorl : MonoBehaviour
         while(goList[11]. GetComponent<SpriteRenderer>().color.a>0f){
             for (int i=7; i<=11; i++){
                 goList[i]. GetComponent<SpriteRenderer>().color=this.GetComponent<fade>().fadeout(3f,goList[i]. GetComponent<SpriteRenderer>().color);
+                yield return new WaitForSeconds(0.01f);
             }
-            yield return new WaitForSeconds(0.1f);
         }
         while(goList[13]. GetComponent<SpriteRenderer>().color.a>0f){
             int[] delete = {0,5,6,12,13};
             for (int i=0; i<5; i++){
                 goList[delete[i]]. GetComponent<SpriteRenderer>().color=this.GetComponent<fade>().fadeout(3f,goList[delete[i]]. GetComponent<SpriteRenderer>().color);
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+        while(goList[3]. GetComponent<SpriteRenderer>().color.a>0f){
+            int[] delete = {1,2,3};
+            for (int i=0; i<3; i++){
+                goList[delete[i]]. GetComponent<SpriteRenderer>().color=this.GetComponent<fade>().fadeout(3f,goList[delete[i]]. GetComponent<SpriteRenderer>().color);
+                yield return new WaitForSeconds(0.01f);
             }
         }
         finish=1;
